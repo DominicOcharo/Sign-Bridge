@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Bridge</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Sign Bridge</h1>
+    <!-- Video upload and control area -->
+    <div id="controls">
+      <input type="file" id="videoFile" accept="video/*" />
+      <button id="uploadVideo">Upload Video</button>
+      <div id="transcriptionText"></div>
+      <!-- Dropdown to choose background color -->
+      <label for="backgroundColorSelect">Background Color:</label>
+      <select id="backgroundColorSelect">
+        <option value="#d2b48c">Tan</option>
+        <option value="#483d8b">Dark Slate Blue</option>
+        <option value="#ff0000">Red</option>
+        <option value="#00ff00">Green</option>
+        <option value="#0000ff">Blue</option>
+        <option value="#ffff00">Yellow</option>
+        <option value="#00ffff">Cyan</option>
+        <option value="#ff00ff">Magenta</option>
+        <option value="#ffffff">White</option>
+        <option value="#000000">Black</option>
+        <option value="#808080">Gray</option>
+        <option value="#ffa500">Orange</option>
+        <option value="#800080">Purple</option>
+        <option value="#008000">Dark Green</option>
+        <option value="#87ceeb">Sky Blue</option>
+        <option value="#f0f8ff">Alice Blue</option>
+        <option value="#faebd7">Antique White</option>
+        <option value="#E6A700">Gold</option>
+        <!-- New color from the attached image -->
+        <option value="#0E2956">Dark Blue</option>
+      </select>
+    </div>
+
+    <!-- Video player with subtitle overlay -->
+    <div id="videoContainer">
+      <video id="videoPlayer" controls></video>
+      <div id="subtitles"></div>
+    </div>
+
+    <!-- Container for 3D GLB animations (small window at the bottom) -->
+    <div id="container3D"></div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
