@@ -20,7 +20,7 @@ app.add_middleware(
 
 # Initialize Groq client with your API key (replace with your actual key)
 client = Groq(
-    api_key="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"
+    api_key=""
 )
 
 # Load the model mapping file
